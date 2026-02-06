@@ -1,9 +1,133 @@
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
 
 }
 body{
     /* font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif; */
-
     font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    background-color: #FFFBF7;
 }
+
+ul{
+    list-style-type: none;
+}
+header{
+    position: relative;
+}
+
+.mainContent{
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    position: relative;
+}
+
+
+
+.calendar{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.month{
+    width: 35px;
+    height: 20px;
+    color: #998C78;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+
+}
+
+.date{
+    width: 35px;
+    height: 60px;
+    color: #675C4B;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.week{
+    color: #998C78;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.img_table{
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 194px;
+    height: 295px;
+    background-image: url(../images/table.png);
+    background-repeat: no-repeat;
+
+    /* padding-bottom: 220px;
+    padding-left: 200px; */
+    /* margin-left: 130px;
+    margin-top: 230px; */
+}
+.midasi
+
+/* {
+    width: 175px;
+    height: 55px;
+    border: solid 1px tomato;
+    background-color: #FFFBE7;
+    border-radius: 50px 50px;
+    margin-right: 25px
+    box-shadow : 2px 2px 5px #E7E3D3; 
+} */
+
+.namebox{
+display: flex;
+flex-direction: column;
+gap: 40px;
+justify-content: space-evenly;
+height: 323px;
+width: 175px;
+margin-top: 60px;
+    .namelist{
+        width: 175px;
+        height: 55px;
+        background-color: #FEFEFE;
+        box-shadow:0px 4px 4px #CAC4AB ;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-size: 1.6em;
+        color: #645B48;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 45px;
+        a{
+            text-decoration: none;
+            color: #645B48;
+        }
+        position: relative;
+        & ::before{
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #AD9971;
+            border-radius: 100%;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        &.namelist-me{
+            background-color: #FFFBE7;
+        }
+        &.namelist-uploaded{
+            & ::before{
+                /* upload sitaatono style wo kaitene */
+                /* background-color: #FFCE80; */
+            }
+        }
+    }
+    .buttonWrap a{
+        text-decoration: none;
+    }
